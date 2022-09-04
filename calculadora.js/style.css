@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+	scroll-behavior: smooth;
+}
+
+body{
+	overflow: hidden;
+}
+
+.imgbox{
+    height: 100vh;
+    width: 100vw;
+    user-select: none;
+}
+
+.img{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    user-select: none;
+}
+
+.abrir{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    font-size: 50px;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px  #ff6600;
+    background-color: #ff8800;
+    opacity: 1;
+    border: none;
+    scroll-behavior: smooth;
+    box-shadow: 10px 10px 4px 5px #000000b4;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.abrir:is(:hover, :focus){ 
+    transform: translate(10px, 10px); 
+    box-shadow: 0px 0px #00214d;
+}
+
+.box{
+    position: fixed;
+    top: 40px;
+    left: -420px;
+    justify-content: center;
+    width: 20rem;
+    height: 30rem;
+    background-color: #ff8800;
+    box-shadow: 10px 10px 4px 1px #000000;
+    user-select: none;
+    list-style: 4px;
+    padding: 10px;
+    display: flex;
+    overflow: auto;
+    resize: both;
+}
+.box p{
+    font-size: 20px;
+}
+
+.btn1{
+    position: absolute;
+    top: 300px;
+}
+.box input{
+    width: 80%;
+    height: 30px;
+    margin: 5px;
+    font-size: 25px;
+}
+.page{
+    height: 100vh;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.calculadora{
+    user-select: none;
+    position: fixed;
+    background-color: rgb(255, 123, 0);
+    top: 50%;
+    left: 150%;
+    border-radius: 10px;
+    padding: 15px;
+    gap: 2ren;
+    flex-wrap: wrap; 
+    place-content: center; 
+    Justify-content: center; 
+    box-shadow: 10px 10px 4px 1px #000000;
+}
+
+h1{
+    color: #ffffff;
+    text-shadow: 0px 0px 15px #000000;
+}
+
+.botao{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 3px;
+    background-color: rgb(31,31,31);
+    border: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px  #ff7b00;
+    font: inherit; 
+    position: relative;
+    transition: all 250ms cubic-bezier(8.99,-8.14,8.95, 1.07);
+    box-shadow: 2px 4px 4px 1px #000000;
+}
+
+.botao:is(:hover, :focus){ 
+    transform: translate(4px, 4px); 
+    box-shadow: 0px 0px #00214d;
+
+}
+
+#resultado{
+    background-color: white;
+    width: 213px;
+    height: 30px;
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+    padding: 5px;
+}
